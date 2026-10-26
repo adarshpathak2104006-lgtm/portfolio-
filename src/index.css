@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', serif;
+    --font-serif: 'Newsreader', serif;
+    --font-sans: 'Plus Jakarta Sans', 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Light Theme (Nebula Mist & White Green) */
+    --color-bg: #F0FDF9;
+    --color-surface: #FFFFFF;
+    --color-surface-hover: #E6F7F2;
+    --color-text: #0F172A;
+    --color-text-muted: #475569;
+    --color-border: #D1E7DD;
+    --color-nebula-blue: #0284C7;
+    --color-nebula-light: #38BDF8;
+    --color-white-green: #059669;
+    --color-white-green-glow: #10B981;
+    --color-charcoal: #0F172A;
+  }
+
+  .dark {
+    /* Dark Theme (Deep Nebula Blue & Luminous White Green) */
+    --color-bg: #070B16;
+    --color-surface: #0D162B;
+    --color-surface-hover: #142244;
+    --color-text: #F0FDF4;
+    --color-text-muted: #94A3B8;
+    --color-border: #1E2E4A;
+    --color-nebula-blue: #38BDF8;
+    --color-nebula-light: #7DD3FC;
+    --color-white-green: #34D399;
+    --color-white-green-glow: #6EE7B7;
+    --color-charcoal: #0B1222;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}
+
+/* Custom scrollbar with nebula cyan & white-green accents */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(52, 211, 153, 0.45);
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', 'Inter', 'Noto Sans Devanagari', sans-serif;
+}
